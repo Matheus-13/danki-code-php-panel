@@ -1,0 +1,471 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Open Sans";
+}
+
+html, body {
+	height: 100vh;
+}
+
+body {
+	overflow-x: hidden;
+}
+
+.clear {
+	clear: both;
+}
+
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
+}
+
+.loading, .loadingBox {
+	display: none;
+}
+
+.loading {
+	position: fixed;
+	width: 100vw;
+	height: 100vh;
+	z-index: 8;
+}
+
+.loadingBox {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 9;
+	background-size: 48px;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+/* Seção Login - INÍCIO */
+
+#login {
+	position: relative;
+	min-width: 100vw;
+	min-height: 100vh;
+}
+
+#login .box {
+	position: absolute;
+	padding: 40px;
+	width: 92vw;
+	max-width: 380px;
+	min-width: 200px;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+}
+
+#login input:not([type="submit"]) {
+	display: block;
+	width: 100%;
+	height: 40px;
+	padding: 10px;
+	margin-bottom: 20px;
+	border-radius: 4px;
+	font-size: 14px;
+}
+
+#login input:not([type="submit"]):focus {
+	outline: 0;
+}
+
+#login input[type="submit"] {
+	padding: 10px 20px;
+	cursor: pointer;
+	font-size: 14px;
+}
+
+#login input[type="checkbox"] {
+	display: inline-block;
+    margin: 0;
+    width: 24px;
+    vertical-align: middle;
+}
+
+#login img {
+	display: block;
+	max-width: 60%;
+	margin: 0 auto 40px;
+}
+
+#login .error {
+	width: 100%;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+/* Seção Login - FIM */
+
+/* Seção Header - INÍCIO */
+
+#header {
+    position: relative;
+    left: 20%;
+    width: 80vw;
+    padding: 10px;
+}
+
+#header a {
+	text-decoration: none;
+	border-radius: 4px;
+	padding: 2px 4px;
+	margin-left: 10px;
+}
+
+.menuBtn {
+	float: left;
+	cursor: pointer;
+	font-size: 20px;
+}
+
+/* Seção Header - FIM */
+
+/* Seção Menu - INÍCIO */
+
+#menu {
+	position: fixed;
+	top: 0;
+	width: 20vw;
+	height: 100vh;
+	overflow-y: auto;
+}
+
+#menu img {
+    display: block;
+    max-width: 50%;
+    margin: 10px auto;
+}
+
+.user {
+    text-align: center;
+    font-size: 16px;
+}
+
+.menuItems {
+	margin-top: 10px;
+}
+
+.menuItems h2 {
+	width: 100%;
+	text-align: center;
+	font-size: 16px;
+	font-weight: normal;
+	padding: 4px 0;
+}
+
+.menuItems a {
+    display: block;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: lighter;
+    padding: 4px;
+}
+
+/* Seção Menu - FIM */
+
+/* Seção Main - INÍCIO */
+
+#main {
+	position: relative;
+	left: 20%;
+	width: 80vw;
+	min-height: calc(90vh - 47px);
+	padding: 0 10px;
+}
+
+/* Seção Main - FIM */
+
+/* Seção Content - INÍCIO */
+
+#content {
+	width: 100%;
+}
+
+.contentBox {
+	width: 100%;
+	padding: 10px;
+	margin: 10px 0;
+}
+
+.contentBox h2 {
+	font-weight: lighter;
+	font-size: 20px;
+	padding: 10px;
+}
+
+.metric {
+	float: left;
+	width: 33.33%;
+	padding: 10px 20px;
+}
+
+.metric h2 {
+	padding: 0;
+}
+
+/* Seção Content - FIM */
+
+/* Alert - INÍCIO */
+
+.alert {
+	position: fixed;
+	z-index: 7;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	font-size: 18px;
+	text-align: center;
+	padding: 12px;
+}
+
+.alert a {
+	text-decoration: none;
+	font-weight: bold;
+}
+
+/* Alert - FIM */
+
+/* Contacts Container - INÍCIO */
+
+.contactsContainer {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contactsContainer .formPanel input:not([type='submit']) {
+	width: 90%;
+	margin: 0 auto;
+	display: block;
+}
+
+.contactsContainer .formPanel input[type='submit'],
+.chatContainer input {
+	padding: 5px 10px;
+	font-size: 14px;
+	margin: 5px 5% 6px 95%;
+}
+
+.contactBox {
+    width: 32.16%;
+    margin: 4px;
+}
+
+.contactBox header {
+    text-align: center;
+}
+
+.contactBox h2 {
+	font-size: 36px;
+	padding: 8px 0;
+}
+
+.contactBox img {
+	max-width: 80%;
+	margin: 4px 0 0;
+}
+
+.contactBox p {
+	font-size: 16px;
+	margin: 8px 4px;
+}
+
+.contactBox span {
+	margin: 4px 8px;
+}
+
+.contactBox span:nth-of-type(1) {
+	float: left;
+}
+
+.contactBox span:nth-of-type(2) {
+	float: right;
+}
+
+/* Contacts Container - FIM */
+
+/* Form Panel - INÍCIO */
+
+.formBox {
+	width: 100%;
+	margin-bottom: 10px;
+}
+
+.formPanel label {
+    display: block;
+    font-weight: lighter;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.formPanel input:not([type='submit']) {
+	width: 100%;
+	height: 40px;
+	padding: 10px;
+	font-size: 16px;
+	border-radius: 4px;
+}
+
+.formPanel input:not([type='submit']):focus,
+textarea {
+	outline: 0;
+}
+
+.formPanel input[type='file'] {
+    padding: 6px;
+}
+
+.formPanel select {
+	width: 100%;
+    font-size: 16px;
+    padding: 4px;
+}
+
+.formPanel textarea {
+    resize: vertical;
+    width: 100%;
+    min-height: 78px;
+    height: 12vh;
+    max-height: 600px;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 4px;
+}
+
+.formPanel img {
+	max-width: 25%;
+}
+
+.formPanel input[type='submit'] {
+	padding: 10px 20px;
+	cursor: pointer;
+	font-size: 16px;
+	margin: 10px 100% 0;
+	transform: translateX(-100%);
+}
+
+/* Form Panel - FIM */
+
+/* Chat - INÍCIO */
+
+.chatContainer {
+	height: 79vh;
+}
+
+.chatBox {
+	width: 100%;
+	height: 75%;
+	overflow-y: scroll;
+	padding: 4px;
+}
+
+.chatBox .message {
+	width: fit-content;
+	font-size: 16px;
+	margin-bottom: 8px;
+	padding: 4px 10px;
+	border-radius: 4px;
+}
+
+.chatBox .message p {
+	font-weight: bold;
+	text-align: justify;
+}
+
+.chatContainer textarea {
+	resize: vertical;
+	width: 100%;
+	min-height: 72px;
+	max-height: 720px;
+	font-size: 16px;
+	padding: 2px 4px;
+	margin: 10px 0;
+}
+
+.chatContainer input {
+	margin: 0;
+	cursor: pointer;
+}
+
+/* Chat - FIM */
+
+/* Pagination - INÍCIO */
+
+.pagination {
+	display: table;
+    margin: 20px auto 10px;
+}
+
+.pagination a {
+	text-decoration: none;
+    font-size: 14px;
+    margin-right: 8px;
+    padding: 2px 4px;
+}
+
+/* Pagination - FIM */
+
+/* Responsive Table - INÍCIO */
+
+.responsiveTable {
+    overflow-x: auto;
+    width: 100%;
+}
+
+.responsiveTable .row {
+    display: flex;
+    padding: 4px;
+}
+
+.responsiveTable.minWidth .row {
+	min-width: 680px;
+}
+
+.responsiveTable .row:nth-of-type(1) {
+    padding: 10px;
+}
+
+.responsiveTable .col {
+    width: 50%;
+}
+
+.responsiveTable a .fa,
+.contactBox a .fa {
+    padding: 4px 16px;
+    border-radius: 4px;
+}
+
+.responsiveTable img {
+	display: flex;
+    max-width: 60%;
+    margin: 0 auto;
+}
+
+/* Responsive Table - FIM */
+
+@media (max-width: 1024px) {}
+
+@media (max-width: 768px) {
+	#header {width: 100vw;left: 0;}
+	#menu {display: none; width: 0;}
+	#main {width: 100vw;left: 0;}
+}
+
+@media (max-width: 720px) {
+	#login input[type="checkbox"] {display: block; margin: -8px calc(100% - 24px);}
+	.loadingBox {position: fixed; width: 100vw; height: 100vh;}
+	.metric {width: 50%;}
+	.formPanel img {max-width: 50%;}
+	.contactBox {width: 100%;margin: 4px 0;}
+}

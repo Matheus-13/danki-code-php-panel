@@ -1,0 +1,217 @@
+body {
+	background-color: #ccc;
+}
+
+.bgBlue {
+	background-color: #0091ea;
+}
+
+.bgGreen {
+	background-color: #00bfa5;
+}
+
+.bgOrange {
+	background-color: #F4B03E;
+}
+
+.bgRed {
+	background-color: #E05C4E;
+}
+
+.loadingBox {
+	background-color: #ccc;
+	background-image: url('../../img/gif/loading.png');
+}
+
+/* Seção Login - INÍCIO */
+
+#login {
+	background-color: #ccc;
+}
+
+#login .box {
+	background-color: #fff;
+}
+
+#login input:not([type="submit"]) {
+	border: 2px solid #ccc;
+	color: #444;
+}
+
+#login .error {
+	border: 2px solid #c14013;
+}
+
+/* Seção Login - FIM */
+
+/* Seção Header - INÍCIO */
+
+#header {
+    background-color: #772953;
+}
+
+#header a {
+	color: #fff;
+	border: 2px solid;
+}
+
+#header a:hover {
+	background-color: #925375;
+}
+
+.menuBtn {
+	color: #fff;
+}
+
+/* Seção Header - FIM */
+
+/* Seção Menu - INÍCIO */
+
+#menu {
+	background-color: #5E2750;
+}
+
+.user {
+    color: #fff;
+}
+
+.menuItems h2 {
+    color: #fff;
+    background-color: #2C001E;
+}
+
+.menuItems a {
+    color: #fff;
+    border-bottom: 2px solid #2C001E;
+}
+
+.menuItems a:hover {
+	background-color: #7E5273;
+}
+
+/* Seção Menu - FIM */
+
+/* Seção Content - INÍCIO */
+
+.contentBox {
+	background-color: #fff;
+}
+
+.metric {
+    color: #fff;
+    border: 5px solid #fff;
+}
+
+/* Seção Content - FIM */
+
+/* Alert - INÍCIO */
+
+.success {
+    background-color: seagreen;
+    color: lightgreen;
+}
+
+.error {
+    background-color: #E95420;
+    color: #FBDDD2;
+}
+
+.warning {
+    background-color: #F4B03E;
+    color: #fff;
+}
+
+.warning a {
+	color: #fff;
+}
+
+/* Alert - FIM */
+
+/* Contacts Container - INÍCIO */
+
+.contactBox {
+    border: 2px solid #ccc;
+}
+
+.contactBox header {
+    color: #ccc;
+    border-bottom: 2px solid #ccc;
+}
+
+/* Contacts Container - FIM */
+
+/* Form Panel - INÍCIO */
+
+.formPanel input:not([type='submit']),
+textarea, .formPanel img {
+	color: #444;
+	border: 2px solid #ccc;
+}
+
+.formPanel input:not([type='submit']):hover,
+textarea:hover, .formPanel img:hover {
+	border-color: #aaa;
+}
+
+.formPanel input:not([type='submit']):focus,
+textarea:focus {
+	border-color: #888;
+}
+
+/* Form Panel - FIM */
+
+/* Chat - INÍCIO */
+
+.chatBox {
+	border: 2px solid #eee;
+}
+
+.chatBox .message {
+	background-color: #eee;
+	color: #444;
+}
+
+/* Chat - FIM */
+
+/* Pagination - INÍCIO */
+
+.pagination .active {
+	background-color: #ccc;
+}
+
+.pagination a {
+    border: 2px solid #ccc;
+    color: #444;
+}
+
+.pagination a:hover {
+    border-color: #aaa;
+}
+
+.pagination a:active {
+    border-color: #888;
+}
+
+/* Pagination - FIM */
+
+/* Responsive Table - INÍCIO */
+
+.responsiveTable .row {
+    border-bottom: 2px solid #ccc;
+}
+
+.responsiveTable .row:nth-of-type(1) {
+    background-color: #00bfa5;
+    color: #fff;
+}
+
+.responsiveTable a .fa,
+.contactBox a .fa {
+    color: #fff;
+}
+
+.overdue {
+	background-color: #ff000030;
+}
+
+/* Responsive Table - FIM */
